@@ -18,7 +18,8 @@ return temp
 }
 func();
 ```
-### Find Longest Word in String - Exclude Special Characters
+---
+#### Find Longest Word in String - Exclude Special Characters
 Consists of two array for loops, one to replace irregular characters, and one to compare words to find the longest length
 - Split the string by spaces into tempWords array
 - Create longest word variable equal to ' '
