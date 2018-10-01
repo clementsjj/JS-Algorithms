@@ -63,3 +63,7 @@ function longestword(str){
   return word;
 }
 ```
+Even More Concise Option:
+```javascript
+return str.split(' ').map(word => word.replace(/[^a-zA-z]/g, '')).reduce((acc,value) => value.length > acc.length ? value : acc , ''))
+```
