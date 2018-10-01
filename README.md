@@ -3,6 +3,10 @@
 Some Algorithm Practice with Javascript!
 (Note: This is for Practice)
 
+- [String Algorithms](#string-algorithms)
+  - [Reverse a String - No Methods]
+  - [Find Longest Word in String]
+
 ---
 ### String Algorithms
 #### Reverse a String - No Methods
