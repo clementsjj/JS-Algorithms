@@ -39,17 +39,12 @@ for(let i=0; i<tempWords.length; i++){
   realArray[i] = tempWords[i].replace(/\W/ig, '')
 }
 
-console.log("TempWords= ", tempWords)
-console.log("RealArray= ", realArray);
-
-
-  for (let i=0; i<realArray.length; i++){
-    if (realArray[i].length > thelongestword.length){
-      thelongestword = realArray[i];
-    }
+for (let i=0; i<realArray.length; i++){
+  if (realArray[i].length > thelongestword.length){
+    thelongestword = realArray[i];
   }
-
-  console.log("The Longest Word= ", thelongestword)
+}
+console.log("The Longest Word= ", thelongestword)
 }
 
 LongestWord(word)
