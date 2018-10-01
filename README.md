@@ -54,3 +54,17 @@ console.log("RealArray= ", realArray);
 
 LongestWord(word)
 ```
+More Concise Option:
+```javascript
+function longestword(str){
+  let words = str.split(' ');
+  var word ='';
+  
+  for (let i in words) {
+    if (words[i].replace(/\W+/ig, '').length > word.length){
+      word = words[i].replace(/\W+/ig, '');
+    }
+  }
+  return word;
+}
+```
