@@ -1,7 +1,8 @@
 # JS-Algorithms
 
 Some Algorithm Practice with Javascript!
-(Note: This is for Practice)
+
+(Note: This is for Practice; All solutions should work, but may not be the best or most efficient)
 
 - [String Algorithms](#string-algorithms)
   - [Reverse a String - No Methods]
