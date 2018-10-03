@@ -181,3 +181,33 @@ console.log(‘-------‘);
 console.log(SimplySymbol(‘===d===c+++a+‘));
 console.log(‘-------’);
 ```
+Pak Solution:
+```javascript
+function SimpleSymbols(str) { 
+
+    let indexes = [];
+    let counter = 0;
+    let plusCount = 0;
+    let equalCount = 0
+  
+    for(let i = 0; i < str.length; i++) {
+      if (str[i].search(/[^A-Za-z0-9]+/g)) {
+        counter++;
+        indexes.push(i)
+      }
+    } 
+    for(let j = 0; j < indexes.length; j++) {
+      if (str[indexes[j] - 1] === '+' && str[indexes[j] + 1] === '+') {
+       plusCount++;
+      } else if (str[indexes[j] - 1] === '=' && str[indexes[j] + 1] === '=') {
+        equalCount++
+      }
+    }
+    if ( (plusCount + equalCount) === counter) {
+      return true;
+    } else {
+      return false;
+    }
+}
+module.exports = SimpleSymbols;
+```
