@@ -8,6 +8,7 @@ Some Algorithm Practice with Javascript!
   - [Reverse a String - No Methods]
   - [Find Longest Word in String]
   - [Replace and Capitalize]
+  - [Evaluate String for Correct Pattern & return true/false]
 
 ---
 ### String Algorithms
@@ -128,7 +129,8 @@ Changes("hey man");
 Example: 
 
 ==+f+===r==+  --> True
-===f+==y= --> False
+
+===f+==y=     --> False
 
 JJ Solution:
 ```javascript
