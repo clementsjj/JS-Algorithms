@@ -123,3 +123,34 @@ const Changes = (str) => {
 }
 Changes("hey man");
 ```
+---
+#### Evaluate a String. All a-z chars must be =f= or +f+ for the string to be true. Else=false;
+Example: 
+
+==+f+===r==+  --> True
+===f+==y= --> False
+
+JJ Solution:
+```javascript
+function SimplySymbol(string) {
+  let tempArray = string.split('')
+  let re =  /[a-z]/ig
+  let isTrue = false;
+  console.log(tempArray)
+
+for (let i=0; i<tempArray.length; i++){
+  console.log('Test: ', tempArray[i])
+if(re.test(tempArray[i])==true){
+  console.log('Enter Loop With: ', tempArray[i])
+  if( (tempArray[i-1] == '=' && tempArray[i+1] =='=') || (tempArray[i-1] == '+' && tempArray[i+1] =='+') ){
+    console.log("Passes Test. isTrue=true")
+    isTrue = true;
+  } else return false
+} //End Big If
+} //End For Loop
+  return isTrue;
+} //End Function
+
+testStr = '===s=+a+===+d+'
+SimplySymbol(testStr);
+```
