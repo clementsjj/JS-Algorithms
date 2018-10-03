@@ -156,3 +156,28 @@ if(re.test(tempArray[i])==true){
 testStr = '===s=+a+===+d+'
 SimplySymbol(testStr);
 ```
+Dwyer Solution:
+```javascript
+function SimplySymbol(str) {
+ var patt = /[a-z]/gi
+ let a = 0;
+ let b = 0;
+ for (let i = 0; i < str.length; i++) {
+   if( patt.test(str[i]) ) {
+     a++
+     if(str[i-1] == str[i+1]) {
+       b++
+   }};
+ };
+ if ( a == b) {
+   return true;
+ } else {
+   return false;
+ }
+}
+
+console.log(SimplySymbol(‘===s=+a+++++d+‘));
+console.log(‘-------‘);
+console.log(SimplySymbol(‘===d===c+++a+‘));
+console.log(‘-------’);
+```
