@@ -213,7 +213,7 @@ function SimpleSymbols(str) {
 module.exports = SimpleSymbols;
 ```
 ---
-#### ABCheck 
+### ABCheck 
 - True if a and b are separated by exactly 3 places in a string
 JJ Solution:
 
