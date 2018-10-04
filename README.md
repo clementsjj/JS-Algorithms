@@ -9,6 +9,7 @@ Some Algorithm Practice with Javascript!
   - [Find Longest Word in String]
   - [Replace and Capitalize]
   - [Evaluate String for Correct Pattern & return true/false]
+  - [ABCheck - True if a and b are separated by exactly 3 places in a string]
 
 ---
 ### String Algorithms
