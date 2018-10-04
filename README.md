@@ -242,7 +242,13 @@ abcheck(string)
 
 Solution 2:
 
-...But gets undefined evaluating str[i-4] in stringToo :(  ...
+~~...But gets undefined evaluating str[i-4] in stringToo :(  ...~~
+If str[i+4] or [i-4] is undefined as a character, thats fine. The functin can return false The program will crash, however, if you try to run a method, like charCodeAt() on an undefined value. 
+
+In this case, it may be better to evaluate the string itself, like `str[i-4] === 'b'` instead of the charCode.
+
+charCodeAt() is still cool though.
+
 ```javascript
 function abcheckTwo(s) {
 str = s.toLowerCase();
