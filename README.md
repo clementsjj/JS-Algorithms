@@ -9,7 +9,7 @@ Some Algorithm Practice with Javascript!
   - [Find Longest Word in String]
   - [Replace and Capitalize]
   - [Evaluate String for Correct Pattern & return true/false]
-  - [ABCheck - True if a and b are separated by exactly 3 places in a string]
+  - [ABCheck - True if a and b are separated by exactly 3 places in a string](####ABCheck)
 
 ---
 ### String Algorithms
@@ -213,7 +213,8 @@ function SimpleSymbols(str) {
 module.exports = SimpleSymbols;
 ```
 ---
-#### ABCheck - True if a and b are separated by exactly 3 places in a string
+#### ABCheck 
+- True if a and b are separated by exactly 3 places in a string
 JJ Solution:
 
 Only checks the first 'a' and 'b'
