@@ -5,7 +5,7 @@ Some Algorithm Practice with Javascript!
 (Note: This is for Practice; All solutions should work, but may not be the best or most efficient)
 
 - [String Algorithms](#string-algorithms)
-  - [Reverse a String - No Methods]
+  - [Reverse a String - No Methods](#string-algorithms)
   - [Find Longest Word in String]
   - [Replace and Capitalize]
   - [Evaluate String for Correct Pattern & return true/false](#evaluate-a-string)
