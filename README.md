@@ -211,3 +211,33 @@ function SimpleSymbols(str) {
 }
 module.exports = SimpleSymbols;
 ```
+---
+#### ABCheck - True if a and b are separated by exactly 3 places in a string
+JJ Solution:
+
+Only checks the first 'a' and 'b'
+```javascript
+function abcheck(s) {
+
+let a = 'a'.charCodeAt()
+let b = 'b'.charCodeAt()
+str = s.toLowerCase();
+let indexA;
+let indexB;
+
+for (let i=0; i < str.length; i++){
+  if(str[i].charCodeAt() == 97 && indexA == undefined ){
+    indexA=str.indexOf(str[i])
+  }
+  if(str[i].charCodeAt() == 98 && indexB == undefined){
+    indexB=str.indexOf(str[i])
+  }
+}
+
+if((indexA - indexB) == 4 || indexB - indexA == 4){
+  return true
+}else return false
+}
+var string = "Lane borrowed"
+abcheck(string)
+```
