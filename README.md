@@ -8,7 +8,7 @@ Some Algorithm Practice with Javascript!
   - [Reverse a String - No Methods]
   - [Find Longest Word in String]
   - [Replace and Capitalize]
-  - [Evaluate String for Correct Pattern & return true/false]
+  - [Evaluate String for Correct Pattern & return true/false](#evaluate-a-string)
   - [ABCheck - True if a and b are separated by exactly 3 places in a string](#abcheck)
 
 ---
@@ -126,7 +126,8 @@ const Changes = (str) => {
 Changes("hey man");
 ```
 ---
-#### Evaluate a String. All a-z chars must be =f= or +f+ for the string to be true. Else=false;
+#### Evaluate a String 
+All a-z chars must be =f= or +f+ for the string to be true. Else=false;
 Example: 
 
 ==+f+===r==+  --> True
@@ -213,7 +214,7 @@ function SimpleSymbols(str) {
 module.exports = SimpleSymbols;
 ```
 ---
-### ABCheck 
+#### ABCheck 
 - True if a and b are separated by exactly 3 places in a string
 JJ Solution:
 
