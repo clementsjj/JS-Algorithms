@@ -219,9 +219,6 @@ JJ Solution:
 Only checks the first 'a' and 'b'
 ```javascript
 function abcheck(s) {
-
-let a = 'a'.charCodeAt()
-let b = 'b'.charCodeAt()
 str = s.toLowerCase();
 let indexA;
 let indexB;
@@ -241,4 +238,26 @@ if((indexA - indexB) == 4 || indexB - indexA == 4){
 }
 var string = "Lane borrowed"
 abcheck(string)
+```
+
+Solution 2:
+
+...But gets undefined evaluating str[i-4] in stringToo :(  ...
+```javascript
+function abcheckTwo(s) {
+str = s.toLowerCase();
+
+for (let i=0; i < str.length; i++){
+  if(str[i].charCodeAt() == 97){
+    if(str[i+4].charCodeAt()==98 || str[i-4].charCodeAt()==98) { 
+      return true;
+    }//End If 2
+  }//End If 1
+}//End For Loop
+  return false //default if no condition is met
+} //end function abcheckTwo
+
+var stringOne='lane borrowed'
+var stringToo='laneb borrowed'
+abcheckTwo(stringOne)
 ```
