@@ -10,6 +10,7 @@ Some Algorithm Practice with Javascript!
   - [Replace and Capitalize]
   - [Evaluate String for Correct Pattern & return true/false](#evaluate-a-string)
   - [ABCheck - True if a and b are separated by exactly 3 places in a string](#abcheck)
+  - [Arithmetic or Geometric](#arithmetic-or-geometric)
 
 ---
 ### String Algorithms
@@ -295,7 +296,7 @@ function abCheck(str) {
 }
 ```
 ---
-####Arithmetic or Geometric
+#### Arithmetic or Geometric
 - If values in an array change by addition or subtractin, then Arithmetic
 - If values in an array change by muiltiplication or division, then Geometric
 
