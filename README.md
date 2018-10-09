@@ -294,3 +294,77 @@ function abCheck(str) {
   }
 }
 ```
+---
+####Arithmetic or Geometric
+- If values in an array change by addition or subtractin, then Arithmetic
+- If values in an array change by muiltiplication or division, then Geometric
+
+JJ Solution
+- Manual check for first 3 variables. NOT ideal solution, since it depends on evaluating the first 3 values instead of a loop
+- Only checks addition and multiplication or none
+```javascript
+function ArithGeo(arr) {
+  let mathThing;
+  let arthSeq = false;
+  let geoSeq = false;
+  let nonSeq = false;
+
+  let a = arr[0];
+  let b = arr[1];
+  let c = arr[2];
+  if (a!==undefined && b !== undefined && c !== undefined){ 
+    //should also check for zero and negative number
+
+    //check addition & subtraction
+    mathThing = b - a;
+    console.log('mathThing= ', mathThing)
+    if ((c-b) === mathThing){
+      //If we are here, things are good. One last check...
+      if(arr[3] !== undefined){
+        if((c + mathThing) == arr[3]){
+          arthSeq = true;
+          return 'Arithmetic'
+        }else {
+          arthSeq = false;
+        }
+      }else {
+        arthSeq = true;
+        console.log('There is no 4th index');
+      }
+    }
+
+    //check mult and div
+    mathThing = b/a
+    if((b*mathThing) == c){
+      //If we are here, things are good. One last check...
+      if(arr[3] !== undefined){
+        if((c*mathThing)===arr[3]){
+          geoSeq = true;
+          return "Geometric";
+        } else {
+          GeoSeq = false;
+        }
+      }else{
+        geoSeq = true;
+        console.log("There is no 4th index");
+      }
+    }
+}//End if NOT undefined
+if (arthSeq!==true && geoSeq!==true){
+  nonSeq = true;
+  return -1;
+}
+
+if(arthSeq == true){return "Arithmeticy"}
+if(geoSeq == true){ return "Geometricy"}
+if(nonSeq == true){return -11}
+} //Function
+
+let arthArry = [2, 4, 6, 8]
+let geoArry = [2,6,18,54]
+let nonArry = [1,20,55]
+
+ArithGeo(arthArry);
+//ArithGeo(geoArry)
+//ArithGeo(nonArry)
+```
