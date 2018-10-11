@@ -11,7 +11,7 @@ Some Algorithm Practice with Javascript!
   - [Evaluate String for Correct Pattern & return true/false](#evaluate-a-string)
   - [ABCheck - True if a and b are separated by exactly 3 places in a string](#abcheck)
   - [Arithmetic or Geometric](#arithmetic-or-geometric)
-  - [Multiply Array-Index Value With Other Array Values(#array-product)
+  - [Array-Index Value Equals Product of Other Array Values](#array-product)
 
 ---
 ### String Algorithms
@@ -397,8 +397,9 @@ console.log(patternDetect([100, 50, 25, 12.5]));
 module.exports = patternDetect;
 ```
 ---
-#### Array Product
-- Multiply a value at index of an array by all the other values in the array.
+#### Index Product
+-  A value at index of an array equals product of all other values in the array.
+- [1,4,3] should return [12,3,4]
 
 Pak Solution:
 ```javascript
