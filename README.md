@@ -11,6 +11,7 @@ Some Algorithm Practice with Javascript!
   - [Evaluate String for Correct Pattern & return true/false](#evaluate-a-string)
   - [ABCheck - True if a and b are separated by exactly 3 places in a string](#abcheck)
   - [Arithmetic or Geometric](#arithmetic-or-geometric)
+  - [Multiply Array-Index Value With Other Array Values(#array-product)
 
 ---
 ### String Algorithms
