@@ -395,3 +395,27 @@ function patternDetect(arr) {
 console.log(patternDetect([100, 50, 25, 12.5]));
 module.exports = patternDetect;
 ```
+---
+#### Array Product
+- Multiply a value at index of an array by all the other values in the array.
+
+Pak Solution:
+```javascript
+function otherProducts(arr) {
+ let results = [];
+ for (let i = 0 ; i < arr.length; i++) {
+     let tempValue = 0;
+     let accuValue = 1;
+   for (let j = 0; j < arr.length; j++) {
+     if ( i === j) {
+       continue;
+     }
+     tempValue = arr[j];
+     accuValue = tempValue * accuValue;
+   }
+   results.push(accuValue);
+ }
+ return results;
+}
+otherProducts([1, 4, 3]);
+```
