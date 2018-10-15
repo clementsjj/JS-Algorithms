@@ -12,6 +12,7 @@ Some Algorithm Practice with Javascript!
   - [ABCheck - True if a and b are separated by exactly 3 places in a string](#abcheck)
   - [Arithmetic or Geometric](#arithmetic-or-geometric)
   - [Array-Index Value Equals Product of Other Array Values](#index-product)
+  - [Add '-' (dash) Between Odd Numbers](#add-dash-between-odds)
 
 ---
 ### String Algorithms
@@ -420,4 +421,12 @@ function otherProducts(arr) {
  return results;
 }
 otherProducts([1, 4, 3]);
+```
+---
+#### Add Dash Between Odds
+- Add a '-' (dash) between two odd numbers in a string
+
+Pak Solution: 
+```javascript
+
 ```
