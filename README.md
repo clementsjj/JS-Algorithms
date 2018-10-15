@@ -428,5 +428,31 @@ otherProducts([1, 4, 3]);
 
 Pak Solution: 
 ```javascript
+function DashInsert(str) {
 
+ let i, array = [], result = "";
+
+ for ( i = 0; i < str.length; i++ ) {
+   array.push(parseInt(str[i]));
+ }
+
+ for (i = 0; i < array.length; i++) {
+   if (array[i] % 2 !== 0 && array[i+1] % 2 !== 0) {
+     result += array[i];
+     result += '-';
+   } else {
+     result += array[i];
+   }
+ }
+
+ var finalAnswer;
+
+ if (result[result.length-1] === '-') {
+   finalAnswer = result.slice(0, [result.length-1]);
+   return finalAnswer;
+ } else {
+   return result;
+ }
+}
+DashInsert('454793');
 ```
