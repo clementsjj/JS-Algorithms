@@ -13,6 +13,7 @@ Some Algorithm Practice with Javascript!
   - [Arithmetic or Geometric](#arithmetic-or-geometric)
   - [Array-Index Value Equals Product of Other Array Values](#index-product)
   - [Add '-' (dash) Between Odd Numbers](#add-dash-between-odds)
+  - [Add numbers hidden in a string](#number-addition)
 
 ---
 ### String Algorithms
