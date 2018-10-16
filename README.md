@@ -456,3 +456,35 @@ function DashInsert(str) {
 }
 DashInsert('454793');
 ```
+#### Number Addition
+- Take a string such as "55Hello 6" and add numbers together (i.e. 61). 
+- Be sure numbers like 55 are together as one number
+
+Pak Solution:
+```javascript
+function NumberAddition(str) {
+ let digits = '0123456789';
+ let numbers = [];
+ let numberString = '';
+
+ for (let i = 0; i < str.length; i++) {
+   if (!digits.includes(str[i])) {
+     if (numberString !== '') {
+       numbers.push(numberString);
+     }
+     numberString = '';
+   } else {
+     numberString += str[i];
+     if ( i === str.length - 1) {
+       numbers.push(numberString)
+     }
+   }
+ }
+ let sum = 0;
+ for (let i = 0; i < numbers.length; i++) {
+   sum += parseInt(numbers[i]);
+ }
+ return sum;
+}
+NumberAddition('6hello 65')
+```
